@@ -1,0 +1,5 @@
+.editorconfig
+/.vs
+App.config
+InventoryManagerWPF/bin/*
+InventoryManagerWPF/obj/*

@@ -1,0 +1,23 @@
+﻿<Window x:Class="InventoryManagerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!-- DataGrid to display products -->
+        <DataGrid x:Name="ProductsDataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="300" Width="700" Margin="10" />
+
+        <!-- TextBoxes to add or update product -->
+        <TextBox x:Name="ProductNameTextBox" Width="200" Height="25" VerticalAlignment="Top" Margin="76,342,524,0" />
+        <TextBox x:Name="CategoryTextBox" Width="200" Height="25" VerticalAlignment="Top" Margin="281,342,319,0" />
+        <TextBox x:Name="QuantityTextBox" Width="100" Height="25" VerticalAlignment="Top" Margin="486,342,214,0" />
+        <TextBox x:Name="PriceTextBox" Width="100" Height="25" VerticalAlignment="Top" Margin="591,342,109,0"/>
+
+        <!-- Buttons -->
+        <Button x:Name="AddProduct" Content="Add Product" Width="100" Height="30" VerticalAlignment="Top" Margin="300,382,400,0" Click="AddProduct_Click" />
+        <Button x:Name="UpdateProduct" Content="Update Product" Width="100" Height="30" VerticalAlignment="Top" Margin="410,382,290,0" Click="UpdateProduct_Click" />
+    </Grid>
+</Window>
